@@ -1,7 +1,7 @@
 linux shell
 authored by Iyar Levi
 
-------------DESCRIPTION-------------------------------------------------------------------
+------------DESCRIPTION--------------------------------------------
 
 The program get string as an input fron the user.
 The program will run the input as a command.
@@ -11,7 +11,7 @@ If the input is the word "history" - the program will print all the previous inp
 If the input is the word "done" - the program will exit and finish.
 the program also support "nohup" and '&'.
 
-------------functions---------------------------------------------------------------------
+------------functions----------------------------------------------
 
 printDetails - function that gets the file and the input
                and print the input string to the file.
@@ -35,7 +35,7 @@ howManyWords - function that count how many words are in the input.
 sig_handler - function that change the default SIGCHLD signal.
 
 
-------------files--------------------------------------------------------------------------
+------------files---------------------------------------------------
 
 there is a file called "file.txt" that save the commands we used.
 only the valid commands and the "history" command will be entered into the file.
@@ -44,11 +44,11 @@ the second file is nohup.txt that save the outpot of the command
 after we shup down the program.
                
 
-------------INPUT-------------------------------------------------------------------------
+------------INPUT--------------------------------------------------
 
 the input is a sentence that can be as long as 512 chars.
 
-------------OUTPUT------------------------------------------------------------------------
+------------OUTPUT-------------------------------------------------
 
 if the input is valid linux command - the output is the execution of that command.
 if the input is not a valid command - the output is  an ERR.
